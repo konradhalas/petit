@@ -1,3 +1,4 @@
+=====
 Petit
 =====
 
@@ -6,7 +7,7 @@ Petit is single metaclass which fix broken methods names like "assertEqual" acor
 Usage
 -----
 
-::
+Sample usage::
 
 form unittest import TestCase
 from petit import Petit
