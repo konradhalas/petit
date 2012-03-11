@@ -2,7 +2,7 @@
 Petit
 =====
 
-Petit is single metaclass which fix broken methods names like "assertEqual" acording to PEP8. Petit stands for "PEP 8 it!".
+Petit is a single metaclass which fixes broken methods names in camel case (like "assertEqual") according to PEP8. Petit stands for "PEP 8 it!".
 
 Usage
 -----
