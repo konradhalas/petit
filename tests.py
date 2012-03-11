@@ -36,6 +36,23 @@ class PetitTest(TestCase):
 
         self.assertTrue(hasattr(obj, 'bad_method_name'))
 
+    def test_fix_bad_method_name_in_base_of_base_class(self):
+
+        class BadClass(object):
+
+            def badMethodName(self):
+                pass
+
+        class NextBadClass(BadClass):
+            pass
+
+        class GoodClass(BadClass):
+            __metaclass__ = Petit
+
+        obj = GoodClass()
+
+        self.assertTrue(hasattr(obj, 'bad_method_name'))
+
     def test_is_bad_function_name(self):
         self.assertTrue(Petit.is_bad_function_name('badName'))
 
