@@ -9,14 +9,14 @@ Usage
 
 Sample usage::
 
-form unittest import TestCase
-from petit import Petit
+    from unittest import TestCase
+    from petit import Petit
 
-class SthTest(TestCase)
+    class SthTest(TestCase)
 
-    __metaclass__ = Petit
+        __metaclass__ = Petit
 
-    def test_sth(self):
-        result = (...)
-        self.assert_true(result)
+        def test_sth(self):
+            result = (...)
+            self.assert_true(result)
 
